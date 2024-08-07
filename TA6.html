@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+    <title>TA5</title>
+</head>
+
+<body>
+    <header class="header">
+    <h1>Formulario de seleccion multiple</h1>
+    </header>
+
+    <form action="Formulario multiple opcion" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+        </div>
+        <fieldset>
+            <legend>Género:</legend>
+            <div>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" id="otro" name="genero" value="prefiero no decirlo" required>
+                <label for="otro">Prefiero no decirlo</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="preferencias">Preferencias:</label>
+            <select id="preferencias" name="preferencias" multiple required>
+                <option value="musica">Música</option>
+                <option value="deporte">Deporte</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="lectura">Lectura</option>
+                <option value="viajes">Viajes</option>
+                <option value="videojuegos">Videojuegos</option>
+                <option value="comida">Comida</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Encuesta">
+            <input type="reset" value="Restablecer">
+        </div>
+      </form>
+</body>
+</html>
